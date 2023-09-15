@@ -1,0 +1,347 @@
+﻿
+@{
+    ViewBag.Title = "Galeria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="banner-area" class="banner-area" style="background-image: url('../../images/banner/banner.png');">
+    <div class="banner-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-heading">
+                        <h1 class="banner-title">GALÉRIA</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="/Default/Domov/">Domov</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Galéria</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div><!-- Col end -->
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+
+<section id="project-area" class="project-area solid-bg">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2 class="section-title">VÝBORNÁ PRÁCA</h2>
+                <h3 class="section-sub-title">Nedávne Projekty</h3>
+            </div>
+        </div>
+        <!--/ Title row end -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="shuffle-btn-group">
+                    <label class="active" for="all">
+                        <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">UKÁZAŤ VŠETKO
+                    </label>
+                    <label for="pergola">
+                        <input type="radio" name="shuffle-filter" id="pergola" value="pergola">PERGOLA
+                    </label>
+                    <label for="guilliotine">
+                        <input type="radio" name="shuffle-filter" id="guilliotine" value="guilliotine">GILOTÍNOVÉHO SKLA
+                    </label>
+                    <label for="zahrady">
+                        <input type="radio" name="shuffle-filter" id="zahrady" value="zahrady">ZIMNEJ ZÁHRADY
+                    </label>
+                    <label for="rollingroof">
+                        <input type="radio" name="shuffle-filter" id="rollingroof" value="rollingroof">ROLLINGROOF
+                    </label>
+                    <label for="bioclimatic">
+                        <input type="radio" name="shuffle-filter" id="bioclimatic" value="bioclimatic">BIOKLIMATICKÝ
+                    </label>
+                    <label for="sliding">
+                        <input type="radio" name="shuffle-filter" id="sliding" value="sliding">POSUVNÝCH SKIEL
+                    </label>
+                    <label for="zip">
+                        <input type="radio" name="shuffle-filter" id="zip" value="zip">OBRAZOVKA ZIPS
+                    </label>
+                    <label for="sun">
+                        <input type="radio" name="shuffle-filter" id="sun" value="sun">SLNEČNÝ MAKLÉR
+                    </label>
+                    @*<label for="healthcare">
+                <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Healthcare
+            </label>*@
+                </div><!-- project filter end -->
+
+
+                <div class="row shuffle-wrapper">
+                    <div class="col-1 shuffle-sizer"></div>
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/bizy pergola.jpeg" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/bizy pergola.jpeg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Bizy Cafe</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 1 end -->
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/zvolen pergola.jpeg" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/zvolen pergola.jpeg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Chorvátska Zmrzlina</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 2 end -->
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;zahrady&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/wintergarden.jpeg" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/wintergarden.jpeg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Martin | Systém Zimnej Záhrady</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 3 end -->
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;rollingroof&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/rollingroof.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/rollingroof.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Systém Rolling Roof </a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 4 end -->
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/hrinova pergola.jpeg" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/hrinova pergola.jpeg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Levik Zmrzlina</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 5 end -->
+
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;,&quot;zip&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/Nove Zamky.jpeg" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/Nove Zamky.jpeg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Pergolove - Záves na zips</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 6 end -->
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;guilliotine&quot;,&quot;rollingroof&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/penzionmarko.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/penzionmarko.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Penzion Marko</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;,&quot;guilliotine&quot;,&quot;sliding&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/sali.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/sali.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Sali Zmrzilina</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/zvolen zmrzilina.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/zvolen zmrzilina.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Chorvátska Zmrzlina</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/pergola1.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/pergola1.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Automatický Pergola Systém</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;bioclimatic&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/bioclimatic.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/bioclimatic.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Bioclimatic Systém</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;,&quot;sliding&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/pergola-sliding.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/pergola-sliding.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Pergola - Posuvné sklo</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;pergola&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/pergola2.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/pergola2.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Automatický Pergola Systém</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;rollingroof&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/almanya1.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/almanya1.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Rolling Roof | Nemecko</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;sun&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/nati.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/nati.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">National Golf Country Club - Rumunska</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 6 end -->
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;bioclimatic&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="~/images/projects/3.png" aria-label="project-img">
+                                <img class="img-fluid" src="~/images/projects/3.png" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">National Golf Country Club - Rumunska</a>
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 6 end -->
+                </div><!-- shuffle end -->
+            </div>
+
+            
+
+        </div><!-- Content row end -->
+    </div>
+    <!--/ Container end -->
+</section><!-- Project area end -->
